@@ -1,0 +1,57 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Codebase Documentation Dashboard</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="/search.html">Search</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="progressSection">
+                <h2>Analysis Progress</h2>
+                <div id="progressBar"></div>
+            </section>
+            <section id="fileTreeSection">
+                <h2>File Structure</h2>
+                <div id="fileTree"></div>
+            </section>
+            <section id="visualizationSection">
+                <h2>Visualizations</h2>
+                <div id="architectureDiagram"></div>
+                <div id="callGraph"></div>
+            </section>
+            <section id="alertsSection">
+                <h2>Alerts</h2>
+                <div id="alerts"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Codebase Documentation Tool</p>
+        </footer>
+    </div>
+    <script>
+        // Initialize dashboard functionalities
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            loadFileTree();
+            loadVisualizations();
+            loadAlerts();
+        });
+    </script>
+</body>
+</html>
+```
