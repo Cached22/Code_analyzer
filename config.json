@@ -1,0 +1,79 @@
+{
+  "openai_api_key": "YOUR_OPENAI_API_KEY",
+  "max_folder_depth": 5,
+  "file_types": ["*.py", "*.md", "*.html", "*.css", "*.js", "*.json"],
+  "excluded_directories": ["venv", "node_modules", ".git"],
+  "ast_parser": {
+    "language": "python",
+    "parser_library": "tree-sitter"
+  },
+  "visualization_tools": {
+    "architecture_diagram": "graphviz",
+    "call_graph": "pyvis"
+  },
+  "documentation_formats": ["markdown", "html", "json"],
+  "progress_tracking": {
+    "enable": true,
+    "type": "progress"
+  },
+  "output_directories": {
+    "documentation": "docs",
+    "data_storage": "data",
+    "logs": "logs",
+    "web_app": "web"
+  },
+  "cli_settings": {
+    "enable_interactive_mode": true,
+    "commands_file": "cli/cli_commands.py",
+    "parser_file": "cli/cli_parser.py"
+  },
+  "api_settings": {
+    "dashboard_api_file": "api/dashboard_api.py",
+    "query_api_file": "api/query_api.py"
+  },
+  "template_files": {
+    "markdown": "templates/documentation_template.md",
+    "html": "templates/documentation_template.html",
+    "json": "templates/documentation_template.json"
+  },
+  "shared_dependencies": {
+    "os": true,
+    "openai": true,
+    "tree_sitter": true,
+    "graphviz": true,
+    "progress": true
+  },
+  "exported_variables": {
+    "api_key": "API_KEY",
+    "config": "CONFIG",
+    "file_metadata_schema": "FILE_METADATA_SCHEMA",
+    "analysis_results_schema": "ANALYSIS_RESULTS_SCHEMA"
+  },
+  "dom_element_ids": {
+    "file_tree": "#fileTree",
+    "progress_bar": "#progressBar",
+    "architecture_diagram": "#architectureDiagram",
+    "call_graph": "#callGraph",
+    "search_results": "#searchResults"
+  },
+  "message_names": {
+    "file_analyzed": "FileAnalyzed",
+    "analysis_progress_update": "AnalysisProgressUpdate",
+    "documentation_generated": "DocumentationGenerated"
+  },
+  "function_names": {
+    "traverse_directory": "traverse_directory",
+    "extract_metadata": "extract_metadata",
+    "parse_code": "parse_code",
+    "map_call_relationships": "map_call_relationships",
+    "generate_description": "generate_description",
+    "summarize_folder": "summarize_folder",
+    "generate_visualization": "generate_visualization",
+    "format_documentation": "format_documentation",
+    "deploy_documentation": "deploy_documentation",
+    "track_progress": "track_progress",
+    "read_config": "read_config",
+    "query_documentation": "query_documentation",
+    "update_dashboard": "update_dashboard"
+  }
+}

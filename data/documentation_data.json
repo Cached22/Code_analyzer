@@ -1,0 +1,21 @@
+```json
+{
+  "files": [],
+  "summary": {
+    "total_files": 0,
+    "total_folders": 0,
+    "total_size": 0
+  },
+  "descriptions": {},
+  "folder_summaries": {},
+  "visualizations": {
+    "architecture_diagrams": [],
+    "call_graphs": []
+  },
+  "progress": {
+    "current": 0,
+    "total": 0,
+    "percentage": 0
+  }
+}
+```
