@@ -1,0 +1,58 @@
+{
+  "documentation": {
+    "title": "Codebase Documentation",
+    "description": "Automatically generated documentation for the analyzed codebase.",
+    "generationDate": "{{generation_date}}",
+    "files": [
+      {
+        "filename": "{{filename}}",
+        "fileType": "{{file_type}}",
+        "size": "{{file_size}}",
+        "classes": [
+          {
+            "className": "{{class_name}}",
+            "methods": [
+              "{{method_name}}"
+            ],
+            "description": "{{class_description}}"
+          }
+        ],
+        "functions": [
+          {
+            "functionName": "{{function_name}}",
+            "calls": [
+              "{{called_function_name}}"
+            ],
+            "description": "{{function_description}}"
+          }
+        ],
+        "variables": [
+          {
+            "variableName": "{{variable_name}}",
+            "type": "{{variable_type}}",
+            "description": "{{variable_description}}"
+          }
+        ],
+        "dependencies": [
+          "{{dependency_filename}}"
+        ]
+      }
+    ],
+    "folders": [
+      {
+        "folderName": "{{folder_name}}",
+        "purpose": "{{folder_purpose}}",
+        "contains": [
+          "{{contained_filename}}"
+        ]
+      }
+    ],
+    "architectureDiagram": "{{architecture_diagram_url}}",
+    "callGraph": "{{call_graph_url}}",
+    "progress": {
+      "filesAnalyzed": "{{files_analyzed_count}}",
+      "totalFiles": "{{total_files_count}}",
+      "percentageComplete": "{{analysis_progress_percentage}}"
+    }
+  }
+}
